@@ -62,7 +62,7 @@ class IngredienteViewSet(ModelViewSet):
         if nome_ingrediente:
             filter_dict['nome'] = nome_ingrediente
         if nome_ricetta:
-            nome_ricetta['ricette__nome'] = nome_ricetta
+            filter_dict['ricette__nome'] = nome_ricetta
         if nome_ristorante:
             filter_dict['ricette__ristoranti__nome'] = nome_ristorante
 

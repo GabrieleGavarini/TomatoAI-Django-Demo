@@ -9,6 +9,8 @@ class Ingrediente(models.Model):
     nome = models.CharField(max_length=100,
                             primary_key=True)
     
+    produttore = models.CharField(max_length=100)
+    
     # Utils
     def __str__(self) -> str:
         return self.nome 
